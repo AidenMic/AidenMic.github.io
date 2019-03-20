@@ -356,19 +356,56 @@ nav ul {
 	overflow: hidden;
 }
 
-nav li a {
+nav li {
 	float: left;
-	display: block;
+}
+
+nav li a, .dropbutton {
+	display: inline-block;
 	color: #000;
+    text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
 /* Change the link color on hover */
-nav li a:hover {
+nav li a:hover, .dropdown:hover .dropbutton {
 	background-color: #555;
 	color: white;
 }
+
+nav li.dropdown {
+	display: inline-block;
+	overflow: visible;
+}
+
+nav li .dropcontent {
+	display: none;
+    position: absolute;
+	float: none;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,100,0,.4);
+	z-index: 1;
+}
+
+nav .dropcontent a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+nav .dropcontent a:hover {
+	background-color: #f1f1f1;
+}
+
+nav .dropdown:hover .dropcontent {
+	display: block;
+}
+
 nav .active {
 	background-color: #4CAF50;
 	color: white;

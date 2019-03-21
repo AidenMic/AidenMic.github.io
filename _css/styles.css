@@ -22,6 +22,8 @@ html {
 
 body {
 	margin: 0;
+	background-color: #272838;
+	color: #FAFFFD;
 }
 
 /**
@@ -40,6 +42,7 @@ main {
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
+	color: #3C91E6;
 }
 
 /* Grouping content
@@ -352,7 +355,7 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: #f1f1f1;
+	background-color: #FAFFFD;
 	overflow: hidden;
 }
 
@@ -368,9 +371,14 @@ nav li a, .dropbutton {
 	text-decoration: none;
 }
 
+nav .active {
+	background-color: #3C91E6;
+	color: white;
+}
+
 /* Change the link color on hover */
 nav li a:hover, .dropdown:hover .dropbutton {
-	background-color: #555;
+	background-color: #9FD356;
 	color: white;
 }
 
@@ -379,19 +387,19 @@ nav li.dropdown {
 	overflow: visible;
 }
 
-nav li .dropcontent {
+nav li ul.dropcontent {
 	display: none;
     position: absolute;
 	float: none;
-	background-color: #f9f9f9;
+	background-color: #FAFFFD;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,100,0,.4);
+	box-shadow: 0px 8px 16px 0px rgba(243,222,138,.3);
 	z-index: 1;
 }
 
 nav .dropcontent a {
 	float: none;
-	color: black;
+	color: #330218;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
@@ -399,14 +407,86 @@ nav .dropcontent a {
 }
 
 nav .dropcontent a:hover {
-	background-color: #f1f1f1;
+	background-color: #9FD356;
 }
 
 nav .dropdown:hover .dropcontent {
 	display: block;
 }
 
-nav .active {
-	background-color: #4CAF50;
+.invisible {
+	display: none;
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+footer li {
+	float: left;
+}
+footer .fab {
+	padding: 20px;
+	font-size: 30px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+footer .fas {
+	padding: 20px;
+	font-size: 30px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+footer .fa-twitter {
+	background: #1da1f2;
+	color: #f5f8fa;
+}
+footer .fa-twitter:hover {
+	background: #f5f8fa;
+	color: #1da1f2;
+}
+footer .fa-youtube {
+	background: #ff0000;
 	color: white;
+}
+footer .fa-youtube:hover {
+	background: white;
+	color: #ff0000;
+}
+footer .fa-twitch {
+	background: #6441a5;
+	color: #f1f1f1;
+}
+footer .fa-twitch:hover {
+	background: #f1f1f1;
+	color: #6441a5;
+}
+footer .fa-github {
+	background: #6cc644;
+	color: #999;
+}
+footer .fa-github:hover {
+	background: #999;
+	color: #6cc644;
+}
+footer .fa-itch-io {
+	background: #fa5c5c;
+	color: white;
+}
+footer .fa-itch-io:hover {
+	background: white;
+	color: #fa5c5c;
+}
+footer .fa-globe-americas {
+	background: #5fe8f7;
+	color: #fff4f4;
+}
+footer .fa-globe-americas:hover {
+	background: #fff4f4;
+	color: #5fe8f7;
 }

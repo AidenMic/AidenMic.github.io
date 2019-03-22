@@ -417,6 +417,13 @@ nav .dropdown:hover .dropcontent {
 .invisible {
 	display: none;
 }
+footer {
+   position: fixed;
+   left: 5%;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
 footer ul {
 	list-style-type: none;
 	margin: 0;
@@ -468,10 +475,10 @@ footer .fa-twitch:hover {
 }
 footer .fa-github {
 	background: #6cc644;
-	color: #999;
+	color: #f5f5f5;
 }
 footer .fa-github:hover {
-	background: #999;
+	background: #f5f5f5;
 	color: #6cc644;
 }
 footer .fa-itch-io {
@@ -483,10 +490,10 @@ footer .fa-itch-io:hover {
 	color: #fa5c5c;
 }
 footer .fa-globe-americas {
-	background: #5fe8f7;
-	color: #fff4f4;
+	background: #38e3f6;
+	color: #f1f1fa;
 }
 footer .fa-globe-americas:hover {
-	background: #fff4f4;
-	color: #5fe8f7;
+	background: #f1f1fa;
+	color: #38e3f6;
 }

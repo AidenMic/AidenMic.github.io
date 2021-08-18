@@ -43,6 +43,7 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 	color: #3C91E6;
+	text-align: center;
 }
 
 /* Grouping content
@@ -350,7 +351,7 @@ template {
 [hidden] {
 	display: none;
 }
-
+/*Navigation */
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -371,7 +372,7 @@ nav li a, .dropbutton {
 	text-decoration: none;
 }
 
-nav .active {
+nav li .active {
 	background-color: #3C91E6;
 	color: white;
 }
@@ -392,21 +393,20 @@ nav li ul.dropcontent {
     position: absolute;
 	float: none;
 	background-color: #FAFFFD;
-	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(243,222,138,.3);
 	z-index: 1;
 }
 
-nav .dropcontent a {
+nav .dropcontent li {
 	float: none;
 	color: #330218;
-	padding: 12px 16px;
+	padding: 0px 0px;
 	text-decoration: none;
 	display: block;
-	text-align: left;
+	text-align: center;
 }
 
-nav .dropcontent a:hover {
+nav .dropcontent li:hover {
 	background-color: #9FD356;
 }
 
@@ -414,40 +414,76 @@ nav .dropdown:hover .dropcontent {
 	display: block;
 }
 
+
+/*Footer */
 .invisible {
 	display: none;
 }
-footer {
-   position: fixed;
-   left: 5%;
-   bottom: 0;
-   width: 100%;
-   text-align: center;
+
+@media only screen and (max-width: 768px) {
+	footer {
+	   left: 0;
+	   bottom: 0;
+	   /* width: 100%; */
+	}
+	footer ul.sociallinks {
+		list-style-type: none;
+		margin: 0px auto;
+	}
+	footer .fab {
+		padding: 20px;
+		font-size: 30px;
+		width: 80%;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
+	footer .fas {
+		padding: 20px;
+		font-size: 30px;
+		width: 80%;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
 }
-footer ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-footer li {
-	float: left;
-}
-footer .fab {
-	padding: 20px;
-	font-size: 30px;
-	width: 40px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
-}
-footer .fas {
-	padding: 20px;
-	font-size: 30px;
-	width: 40px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 2px;
+
+@media only screen and (min-width: 768px) {
+	footer {
+	   position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   /* width: 100%; */
+	   text-align: center;
+	}
+	footer ul.sociallinks {
+		list-style-type: none;
+		margin: 0px auto;
+		overflow: hidden;
+		opacity: 0.5;
+	}
+	footer ul.sociallinks:hover {
+		opacity: 1;
+	}
+	footer ul li {
+		float: left;
+	}
+	footer .fab {
+		padding: 20px;
+		font-size: 30px;
+		width: 40px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
+	footer .fas {
+		padding: 20px;
+		font-size: 30px;
+		width: 40px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
 }
 footer .fa-twitter {
 	background: #1da1f2;
@@ -496,4 +532,11 @@ footer .fa-globe-americas {
 footer .fa-globe-americas:hover {
 	background: #f1f1fa;
 	color: #38e3f6;
+}
+/* Game window */
+.gameWindow {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
